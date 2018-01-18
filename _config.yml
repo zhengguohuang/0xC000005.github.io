@@ -1,17 +1,17 @@
 # Site settings
-title: BY Blog
-SEOTitle: 柏荧的博客 | BY Blog
+title: Max_Zhangの小小博客 
+SEOTitle: Max_Zhangの小小博客 
 header-img: img/post-bg-desk.jpg
-email: qiubaiying@gmail.com
-description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 柏荧的博客, qiubaiying, 邱柏荧, iOS, Apple, iPhone"
-url: "http://qiubaiying.github.io"          # your host, for absolute URL
+email: 0xc00005@gmail.com
+description: "Max_Zhang的小小博客，求路过_(:з」∠)_，不定期更新，但是干货什么的就是有生之年了....."
+keyword: "0xC00005, 张经纬,Max_Zhang,2860520591, Python教程,B站,三牧 "
+url: "http://0xC00005.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+sidebar-about-description: "CPC的死忠粉嗷嗷嗷嗷嗷"
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -19,10 +19,10 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 # SNS settings
 RSS: false
 # weibo_username:     qiubaiying
-zhihu_username:     qiubaiying
-github_username:    qiubaiying
-facebook_username:  baiying.qiu.7
-jianshu_username:   e71990ada2fd
+zhihu_username:     0xC00005
+github_username:    0xC000005
+#facebook_username:  baiying.qiu.7
+#jianshu_username:   e71990ada2fd
 #twitter_username:   qiubaiying
 
 
@@ -55,9 +55,8 @@ kramdown:
 
 
 
-# 评论系统
-# Disqus（https://disqus.com/）
-# disqus_username: qiubaiying
+# 评论系统 Disqus（https://disqus.com/）
+disqus_username: 0xC00005
 
 # Gitalk
 gitalk:
@@ -65,8 +64,8 @@ gitalk:
   clientID: f2c84e7629bb1446c1a4   #生成的clientID
   clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d  #同上
   repo: qiubaiying.github.io    #仓库名称
-  owner: qiubaiying    #github用户名
-  admin: qiubaiying
+  owner: 0xC00005    #github用户名
+  admin: 0xC00005
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
@@ -74,11 +73,12 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: b50bf2b12b5338a1845e33832976fd68
+#ba_track_id: b50bf2b12b5338a1845e33832976fd68
+#在北美连百度统计都要墙掉的嘛？QAQ
 
 # Google Analytics
-ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_track_id: 'UA-112677501-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto           # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
@@ -99,16 +99,16 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "0xC00005的知乎小站",
+        href: "https://www.zhihu.com/people/wang-li-jun-76-22/activities"
     },{
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        title: "提问环节cocode",
+        href: "http://cocode.cc/users/0xc000005/activity"
     },{
-        title: "Apple",
-        href: "https://apple.com"
+        title: "来QQ撩小哥哥",
+        href: "http://wpa.qq.com/msgrd?v=3&uin=2860520591&site=qq&menu=yes"
     },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
+        title: "B站主页【内置干货,但可能会碰到一些黑♂暗的东♂西】",
+        href: "https://space.bilibili.com/33057937#/"
     }
 ]
