@@ -1,9 +1,9 @@
 # Site settings
-title: Max_Zhangの小小博客
-SEOTitle: 欢迎光临！亲爱的，我等了你很久了呢，没事也常来看看啊——诶，别走啊多看一会儿呗......
+title: Max_Zhangの小站
+SEOTitle: 欢迎光临！亲爱的~
 header-img: img/post-bg-desk.jpg
 email: 0xc00005@gmail.com
-description: "Max_Zhang的小小博客，求路过_(:з」∠)_，不定期更新，但是干货什么的就是有生之年了....."
+description: "Max_Zhangの小小博客，求路过_(:з」∠)_，不定期更新，但是干货什么的就是有生之年了....."
 keyword: "0xC00005, 张经纬,Max_Zhang,2860520591, Python教程,B站,三牧 "
 url: "http://0xC00005.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -11,7 +11,13 @@ github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "CPC的死忠粉嗷嗷嗷嗷嗷"
+sidebar-about-description: "
+CPC的死忠粉【划重点】
+———————————————————————————————————————————————
+Python死鱼酱【因为番剧才入手的】
+前NOI退役老爷爷，但cpp系统编程至今不会
+海外留学ing，坐标某西方资本/帝国主义大国-----的旁边
+某仿卖青团组织的金牌运维？"
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -99,13 +105,13 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "0xC00005的知乎小站",
+        title: "0xC00005的知乎小站           ",
         href: "https://www.zhihu.com/people/wang-li-jun-76-22/activities"
     },{
-        title: "提问环节cocode",
+        title: "提问环节cocode               ",
         href: "http://cocode.cc/users/0xc000005/activity"
     },{
-        title: "来QQ撩小哥哥",
+        title: "来QQ撩小哥哥                 ",
         href: "http://wpa.qq.com/msgrd?v=3&uin=2860520591&site=qq&menu=yes"
     },{
         title: "B站主页【内置干货,但可能会碰到一些黑♂暗的东♂西】",
