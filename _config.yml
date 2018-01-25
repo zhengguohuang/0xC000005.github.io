@@ -67,8 +67,8 @@ disqus_username: '0xC00005'
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: f9b0248200333ee74641   #生成的clientID
-  clientSecret: 3cf37f6cb964f70fabcc6137f32146307c2a8b4a  #同上
+  clientID: cca4e854a42a1b5a84d9  #生成的clientID
+  clientSecret: 04333bdeb4b282b73efa46d6f3922cbea61be1c0  #同上
   repo: 0xC000005.github.io     #仓库名称
   owner: '0xC000005'    #github用户名
   admin: '0xC000005'
