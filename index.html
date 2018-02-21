@@ -3,7 +3,7 @@ layout: page
 description: "柴门闻犬吠，风雪夜归人"
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
