@@ -1,0 +1,223 @@
+---
+layout:     post
+title:      Python本地数据的读写
+subtitle:   使用Python原生的函数在系统目录下读写文件
+date:       2018-3-5
+author:     Max
+header-img: img/post-bg-rwd.jpg
+catalog: true
+tags:
+    - Python
+---
+
+
+## 前言
+
+清理缓存，啪叽啪叽清理掉了几百个M已经缓存好的图♂片，这让我再一次意识到了用加♂密文件存储重要信息的重要性
+
+附：以后再也不当百度云战士了【笑】
+
+## 正文
+
+在python里面长期使用或者是存储的数据都会用文件的形式进行存储
+
+辣么如何使用Python获取存储在电脑本地的文件呢【放在电脑上面防止河蟹】
+
+大概可以分成以下几个步骤：
+- 打开文件才能读写
+- 读文件，写文件
+- 保存，关闭文件【关闭防止程序异常炸掉把文件搞坏了】
+
+有时候文件太♂大还要解压文件【186G无码春晚视频】
+为了安♂全起见，文件用完之后要养成关闭文件的好习惯【就像上完AB站之后要清理浏览记录一样】
+
+### 文件的打开
+
+Python中自带的打开文件的函数是open（）
+档然辣第三方库那些妖艳的函数我们都是想用不想记的【哈哈】
+
+```
+>>> help(open)
+Help on built-in function open in module __builtin__:
+
+open(...)
+    open(name[, mode[, buffering]]) -> file object
+
+    Open a file using the file() type, returns a file object.  This is the
+    preferred way to open a file.  See file.__doc__ for further information.
+
+>>>
+```
+先开一下help看看open的使用方法：
+```
+file_object=open(文件路径,读写模式='r',缓冲区大小=-1)
+```
+读写模式和缓缓从曲大小有预设值，但是文件名是必须填的【连文件名都不知道怎么读文件?】
+- 读写模式默认值为r，表示读文件
+- 缓冲区大小默认值为-1（-1使用系统的缓冲区大小，.是不缓冲，1或大于1的数字表示缓冲一行或者指定缓冲区的大小）
+
+![文件读写模式表](http://upload-images.jianshu.io/upload_images/10219317-6eed703ab81d3558.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+这就很有意思了w会清空原来的内容也就是说如果你想在文件里面添加图♂片却不小心把a模式写成了w模式那里的老婆们可就全没了【嗯哼？】
+
+我们现在桌面上面创建一个txt文件：
+```
+>>> open('C:\\Users\\15806.DESKTOP-A9HK574\\Desktop\\test.txt','w')
+<open file 'C:\\Users\\15806.DESKTOP-A9HK574\\Desktop\\test.txt', mode 'w' at 0x03442F98>
+```
+这里使用w模式是为了写文件而不是读取文件【没有文件怎么读取所以要先创建】
+
+然后我们来试着读取这个文件：
+```
+>>> open('C:\\Users\\15806.DESKTOP-A9HK574\\Desktop\\test.txt','r')
+<open file 'C:\\Users\\15806.DESKTOP-A9HK574\\Desktop\\test.txt', mode 'r' at 0x035AC2E0>
+```
+发现这个返回值是一个open_file类型的文件？我们看不懂
+所以如何转换呢？我们把这个返回值赋给一个变量：
+```
+>>> f1=open('C:\\Users\\15806.DESKTOP-A9HK574\\Desktop\\test.txt','r')
+>>> f1
+<open file 'C:\\Users\\15806.DESKTOP-A9HK574\\Desktop\\test.txt', mode 'r' at 0x03442F98>
+```
+发现还是不行......
+
+open函数返回的是一个file对象，也就是用class定义的辣个东东
+这个文件是可以迭代的，所以你可以直接往for里面塞文件然后range（0，len(文件））【神奇？】
+
+如果读取什么的话要使用file对象里面的方法:
+- f1.read（），f1.write（），f1.readline（），f1.readlines（），f1.writeline（）
+- f1.close（）
+- f1.seek（）
+
+现在我使用write方法往刚刚我们新建的文件里面写入数据
+附：需要使用可以写入文件的方法打开文件
+```
+>>> f1=open('C:\\Users\\15806.DESKTOPA9HK574\\Desktop\\test.txt','r+')
+>>> f1.write('Do you like 玩♂游♂戏')
+>>> f1.close()
+```
+这样你就成功的怀着赞美之心的写入了文件
+
+但是你也可以用with的方法写入文件
+
+这样的话如果遇到异常的时候还可以使用保护代码保护文件
+
+而且最最重要的是：
+
+**with自带关闭文件句柄**，所以你可以不用写close语句
+```
+>>> with open('C:\\Users\\15806.DESKTOPA9HK574\\Desktop\\test.txt','a') as f1:\
+... f1.write('Boy next door')
+```
+~~附：特别是当你忘记写close的时候~~
+
+### 文件的读写
+
+write（）是写文件
+辣么read（）就是读文件了
+read（）就是读文件直到文件结束，然后返回一个字符串
+read（参数）就是读至多N个长度的字符串
+我们尝试一下用：
+```
+>>> with open('C:\\Users\\15806.DESKTOP-A9HK574\\Desktop\\test.txt','r+') as f:
+...     p1=f.read()
+...     print(p1)
+```
+发现是可以正确的读取文件的
+附：使用with方法的时候记得缩进
+
+### 多行文件的处理
+这时候就要用上刚刚没用用上的几个方法了
+
+- readlines()是读取多行数据 
+- readline()是读取一行数据 
+- writelines()是写入多行数据 
+
+其中readlines()和writelines()更加常用 
+
+我们来看一个例子：
+ 
+```
+>>> with open('test.txt') as f:
+...    cNames=f.readlines()
+...    print(cNames)
+...
+['Do you like \xcd\xe6\xa1\xe1\xd3\xce\xa1\xe1\xcf\xb7\n', 'Boy next door']
+```
+这样就读取了一个含有文件所以行的列表，但是这个是带有换行符的，如果要去掉可以使用strip（）方法
+
+附：上面好像读取了什么不得了的东西出来
+
+Python当中并没有writeline（）函数，因为跟write（）功能一样所以就被残忍的省略了【你们这群荷兰人就不能多写一个函数嘛......】
+
+### 文件读读写写综合
+
+现在我们要在每一行的开头添加序号，然后将刚刚的test.txt改写并保存在re_test.txt文件里面并保证text.txt文件不被更改
+
+具体代码实现如下：
+```
+with open('test.txt','r+') as f:
+    cNames=f.readlines()
+    for i in range(0,len(cNames)):
+        cNames[i]=str(i+1)+' '+cNames[i]
+with open('re_test.txt','w')as f1:
+    f1.writelines(cNames)
+```
+
+然后现在我们编写一个程序，自定义输入文件路径，然后在文件尾部写入数据【有一点加花花的感觉】
+
+```
+#coding=UTF-8
+road=input('请输入一个要加花花的文件名: ')
+data=input('请输入花花: ')
+with open(road,'a+') as f:
+    f.writelines('\n')
+    f.writelines(data)
+    cNames=f.readlines()
+    print(cNames)
+```
+
+你会发现cNames不能正确的读出文件的内容，事实上如果使用这段代码则cNames永远会等于一个[ ]
+
+这是因为在读写时都有一个文件指针 
+数据从文件指针所在位置开始读写 比如刚才我们通过writelines()进行数据写入 那此时文件指针已经在文件的尾部 
+这时候再用readlines() 读出数据的时候就会产生不正确的结果
+
+ 那怎么样才能 让文件指针指向我们需要的位置呢 Python当中提供了seek()方法 
+
+seek()方法有两个参数 第一个参数是offset 就是偏移量 第二个参数是表示起始位置 默认值是0 
+例如f.seek(0,0)或者单写一个0就表示 把文件指针移到文件的开头 那如果是f.seek(50, 1)表示什么呢 是把文件指针往后移动50个字节 
+
+所以，我们只要在cNames上面加一句f.seek( )就可以重获青春活力【雾】
+
+```
+#coding=UTF-8
+road=input('请输入一个要加花花的文件名: ')
+data=input('请输入花花: ')
+with open(road,'a+') as f:
+    f.writelines('\n')
+    f.writelines(data)
+    f.seek(0)
+    cNames=f.readlines()
+    print(cNames)
+```
+
+我们甚至可以做到让这个程序修改自己的源代码或者做免杀的骚操作
+woc
+我忘记转换代码了woc我为什么要写中文啊啊啊啊啊啊啊
+
+![被我玩坏了](http://upload-images.jianshu.io/upload_images/10219317-fd6a551a247763c0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+emmmmmmm
+心情复杂
+
+## 后记
+
+爬虫虫系列第二课，算是复习吧【叫你不加encode？！】
+感兴趣的可以去看看南京大学的信息获取课程，干货到噎住
+
+## 最后的最后
+
+[来Max的Blog点星星吧~][1]
+
+[1]:https://0xc000005.github.io
