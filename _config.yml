@@ -1,17 +1,17 @@
 # Site settings
-title: 风雪社
-SEOTitle: 风雪资讯社 | 官网
+title: 棱镜军事
+SEOTitle: 棱镜军事 | 官网
 header-img: img/post-bg-desk.jpg
 email: fengxueshe@sina.cn
 description: "Every failure is leading towards success."
-keyword: "风雪社，风雪资讯社"
+keyword: "棱镜军事"
 url: "http://fengxueshe.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/fengxueshe/fengxueshe.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "柴门闻犬吠，风雪夜归人"
+sidebar-about-description: "棱镜军事"
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
