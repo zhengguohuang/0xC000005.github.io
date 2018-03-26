@@ -92,10 +92,3 @@ service-worker: true
 
 
 
-# Friends
-friends: [
-    {
-        title: "微博",
-        href: "http://weibo.com/fxsblizzard"
-    }
-]
