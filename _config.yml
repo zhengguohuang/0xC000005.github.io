@@ -4,7 +4,7 @@ SEOTitle: Max小站
 header-img: img/post-bg-desk.jpg
 email: 0xc00005@gmail.com
 description: "Max_Zhangの小小博客，求路过_(:з」∠)_，不定期更新，但是干货什么的就是有生之年了....."
-keyword: "0xC00005, 张经纬,Max_Zhang,2860520591, Python教程,B站,三牧 "
+keyword: "0xC00005, 张经纬,Max_Zhang,2860520591, Python教程,B站 "
 url: "http://0xC00005.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
@@ -111,7 +111,7 @@ friends: [
         title: "提问环节cocode               ",
         href: "http://cocode.cc/users/0xc000005/activity"
     },{
-        title: "来QQ撩小哥哥                 ",
+        title: "来QQ撩小姐姐                 ",
         href: "http://wpa.qq.com/msgrd?v=3&uin=2860520591&site=qq&menu=yes"
     },{
         title: "B站主页【内置干货,但可能会碰到一些黑♂暗的东♂西】",
