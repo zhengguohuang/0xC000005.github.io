@@ -23,7 +23,7 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 
 
 # SNS settings
-RSS: false
+RSS: true
 #weibo_username:     c8137f32d573
 zhihu_username:     0xC00005
 github_username:    0xC000005
