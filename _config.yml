@@ -1,23 +1,21 @@
 # Site settings
-title: Max小站
+title: Max小站😉
 SEOTitle: Max小站
 header-img: img/post-bg-desk.jpg
 email: 0xc00005@gmail.com
-description: "Max_Zhangの小小博客，求路过_(:з」∠)_，不定期更新，但是干货什么的就是有生之年了....."
-keyword: "0xC00005, 张经纬,Max_Zhang,2860520591, Python教程,B站 "
+description: "Max的小小博客，不定期更新，但是干货什么的就是有生之年了....."
+keyword: "0xC00005, Jingwei Zhang, Max - Jingwei Zhang, Max Zhang, Max, 2860520591, Atto Musk, Atto, 棱镜"
 url: "http://0xC00005.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
+github_repo: "https://github.com/0xC000005/0xC000005.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "
-圈名:0xC00005,Max_Zhang
+0xC00005，是🍁绝美黑长直！
 
-Python死鱼酱【因为小林家的龙女仆才入手的】
-前NOI退役老爷爷，但cpp系统编程至今不会
-海外留学ing，坐标某西方资本/帝国主义大国-----的旁边
-某仿卖青团组织的金牌运维？"
+前OIer，Python🦎gcd了，咸鱼数据科学给👴爪巴。不定时写文产粮。喜欢结交大佬了！
+"
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -25,9 +23,10 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 # SNS settings
 RSS: true
 #weibo_username:     c8137f32d573
-zhihu_username:     0xC00005
+#你要是敢社工的话那对不起，你妈死了！
+zhihu_username:     wang-li-jun-76-22
 github_username:    0xC000005
-#facebook_username:  baiying.qiu.7
+facebook_username:  0xC00005
 jianshu_username:   c8137f32d573
 #twitter_username:   qiubaiying
 
@@ -104,16 +103,19 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "0xC00005的知乎小站           ",
+        title: "🍺逼乎Zhihu",
         href: "https://www.zhihu.com/people/wang-li-jun-76-22/activities"
     },{
-        title: "提问环节cocode               ",
-        href: "http://cocode.cc/users/0xc000005/activity"
+        title: "👌简书Jianshu",
+        href: "https://www.jianshu.com/u/c8137f32d573"
     },{
-        title: "来QQ撩小姐姐                 ",
+        title: "😘来QQ撩小姐姐?",
         href: "http://wpa.qq.com/msgrd?v=3&uin=2860520591&site=qq&menu=yes"
     },{
-        title: "B站主页【内置干货,但可能会碰到一些黑♂暗的东♂西】",
+        title: "🎉小破站BiliBili",
         href: "https://space.bilibili.com/33057937#/"
+    },{
+        title: "🎈北美日常instagram",
+        href: "https://www.instagram.com/m04.zhang/"
     }
 ]
