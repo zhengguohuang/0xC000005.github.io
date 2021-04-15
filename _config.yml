@@ -98,20 +98,20 @@ service-worker: true
 
 # Friends
 friends: [
-<!--     {
-        title: "🍺逼乎Zhihu",
-        href: ""
-    },{
-        title: "👌简书Jianshu",
-        href: ""
-    },{
-        title: "😘来QQ撩小姐姐?",
-        href: ""
-    },{
-        title: "🎉小破站BiliBili",
-        href: ""
-    },{
-        title: "🎈北美日常instagram",
-        href: ""
-    } -->
+#      {
+#         title: "🍺逼乎Zhihu",
+#         href: ""
+#     },{
+#         title: "👌简书Jianshu",
+#         href: ""
+#     },{
+#         title: "😘来QQ撩小姐姐?",
+#         href: ""
+#     },{
+#         title: "🎉小破站BiliBili",
+#         href: ""
+#     },{
+#         title: "🎈北美日常instagram",
+#         href: ""
+#     } 
 ]
