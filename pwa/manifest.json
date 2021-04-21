@@ -1,7 +1,7 @@
 {
-  "name": "Hux Blog",
-  "short_name": "Hux Blog",
-  "description": "About an engineer & designer who loves web.",
+  "name": "TY Blog",
+  "short_name": "TY Blog",
+  "description": "TY代表Ten Years，希望把博客从爱好变成一种习惯,坚持10年。",
   "icons": [{
     "src": "icons/128.png",
     "sizes": "128x128",
